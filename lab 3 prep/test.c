@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
 
     int rows, columns;
     printf("Enter dimensions: \n");
@@ -20,7 +20,7 @@ int main() {
             scanf("%d", &array[i][j]);
         }
     }
-	
+
     printf("Matrix selected: \n");
 
     for (int i = 0; i < rows; i++) {
@@ -31,13 +31,13 @@ int main() {
     }
 
     // sum of squares (main diagonal)
-    int diagonalSum = 0;
+    int diagonalSum;
     for (int i = 0; i < rows; i++) {
         diagonalSum += array[i][i] * array[i][i];
     }
 
     // sum of squares (side diagonal)
-    int sideSum = 0;
+    int sideSum;
     for (int i = 0; i < rows; i++) {
         sideSum += array[i][(columns - 1) - i] * array[i][(columns - 1) - i];
     }

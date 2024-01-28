@@ -1,3 +1,3 @@
 all:
-	@clang main.c -o bin/main
-	@./bin/main
+	@clang problem.c -o ./bin/main
+	@echo "3 3 1 2 3 4 5 6 7 8 9" | ./bin/main
